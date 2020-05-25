@@ -33,6 +33,9 @@ header {
     padding-top: 35px;
     text-align: center;
     font-size: 23px;
+    @media(max-width: 600px) {
+      font-size: 19px;
+    }
   }
 }
 .intro {
@@ -45,16 +48,27 @@ header {
     line-height: 47px;
     font-size: 38px;
     font-weight: 300;
+    @media(max-width: 600px) {
+      font-size: 23px;
+    }
   }
   p {
     padding-top: 50px;
     letter-spacing: 1.5px;
+  }
+  @media(max-width: 600px) {
+    height: 270px;
+
   }
 }
 .banner {
   background: url(../img/img/background.jpg);
   height: 450px;
   background-size: cover;
+  @media(max-width: 600px) {
+    background-position: center center;
+    background-size: cover;
+  }
 }
 .summary {
   width: 100%;
@@ -62,6 +76,10 @@ header {
   padding: 140px 0 0 150px;
   h2 {
     font-size: 30px;
+    @media(max-width: 600px) {
+      font-size: 23px;
+      padding-right: 24px;
+    }
   }
   .internals {
     h5 {
@@ -70,51 +88,84 @@ header {
       line-height: 40.9px;
     }
   }
+  @media(max-width: 600px) {
+    padding: 140px 0 0 22px;
+  }
 }
 .experience {
   height: auto;
   background-color: $grey-color;
   padding: 140px 0 0 150px;
+  @media(max-width: 600px) {
+    padding: 140px 0 0 22px;
+  }
   h2 {
     font-size: 30px;
+    @media(max-width: 600px) {
+      font-size: 23px;
+    }
   }
   .marviq {
     margin: 0;
     p {
       margin-bottom: 25px;
+      @media(max-width: 600px) {
+        font-size: 12px;
+      }
     }
     h3 {
       font-size: 19px;
       font-weight: 700;
       margin-top: 9px;
+      @media(max-width: 600px) {
+        font-size: 16px;
+      }
     }
     h4 {
       font-size: 19px;
+      @media(max-width: 600px) {
+        font-size: 15px;
+      }
     }
     h5 {
       font-size: 16px;
       font-weight: 200;
       line-height: 40.9px;
       margin-top: 15px;
+      @media(max-width: 600px) {
+        font-size: 14px;
+      }
     }
   }
   .newbusinessmonitor {
     p {
       margin-bottom: 25px;
+      @media(max-width: 600px) {
+        font-size: 12px;
+      }
     }
     h3 {
       font-size: 19px;
       font-weight: 700;
       margin-top: 9px;
+      @media(max-width: 600px) {
+        font-size: 16px;
+      }
     }
     h4 {
       font-size: 19px;
+      @media(max-width: 600px) {
+        font-size: 15px;
+      }
     }
     h5 {
       font-size: 16px;
       font-weight: 200;
       line-height: 40.9px;
       margin-top: 15px;
+      @media(max-width: 600px) {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -122,6 +173,9 @@ header {
   width: 100%;
   height: 340px;
   padding: 140px 0 0 150px;
+  @media(max-width: 600px) {
+    padding: 140px 0 0 22px;
+  }
   h2 {
     font-size: 30px;
   }
@@ -130,6 +184,9 @@ header {
     font-weight: 200;
     line-height: 40.9px;
     margin-left: -124px;
+    @media(max-width: 600px) {
+      margin-left: -82px;
+    }
   }
   h6 {
     font-size: 16px;

@@ -15,9 +15,6 @@ $dark-color: #222;
 body {
   font-family: 'Prata', serif;
   line-height: 38px;
-  @media(max-width: 828px) {
-    display: block;
-  }
 }
 .row {
   height: auto;
@@ -77,9 +74,10 @@ header {
   width: 100%;
   height: 340px;
   padding: 140px 0 0 150px;
-  @media(max-width: 828px) {
-    padding: 140px 0 0 42px;
+  flex-basis: 50%;
+  @media(max-width: 900px) {
     font-size: 23px;
+    padding: 140px 0 0 42px;
   }
   h2 {
     font-size: 30px;
@@ -92,9 +90,14 @@ header {
       font-size: 16px;
       font-weight: 200;
       line-height: 40.9px;
-      @media(max-width: 828px) {
-        padding: 140px 0 0 22px;
+    }
+    @media(max-width: 828px) {
+      h5 {
+        line-height: 40.9px;
       }
+    }
+    @media(min-width: 700px) {
+      flex-basis: 25%;
     }
   }
 }
@@ -102,7 +105,7 @@ header {
   height: auto;
   background-color: $grey-color;
   padding: 140px 0 0 150px;
-  @media(max-width: 828px) {
+  @media(max-width: 900px) {
     padding: 140px 0 0 42px;
   }
   h2 {
@@ -180,7 +183,7 @@ header {
   height: 340px;
   padding: 140px 0 0 150px;
   @media(max-width: 828px) {
-    padding: 140px 0 0 42px;
+    padding: 140px 0 0 23px;
   }
   h2 {
     font-size: 30px;
@@ -193,18 +196,16 @@ header {
     font-size: 16px;
     font-weight: 200;
     line-height: 40.9px;
-    margin-left: -124px;
     @media(max-width: 828px) {
-      margin-left: -59px;
+
     }
   }
   h6 {
     font-size: 16px;
     font-weight: 200;
     line-height: 40.9px;
-    margin-left: -156px;
     @media(max-width: 828px) {
-      margin-left: -72px;
+
     }
   }
 }
@@ -213,7 +214,7 @@ header {
   height: 250px;
   padding: 140px 0 0 150px;
   background-color: #f9f9f9;
-  @media(max-width: 828px) {
+  @media(max-width: 900px) {
     padding: 140px 0 0 42px;
   }
   h3 {
@@ -254,7 +255,6 @@ header {
       text-decoration: none;
       cursor: pointer;
       line-height: 28px;
-      margin-left: -124px;
     }
   }
   .linkedin {
@@ -272,7 +272,6 @@ header {
     }
     h3 {
       font-size: 30px;
-      margin-left: -124px;
       a {
         font-size: 17px;
         color: $dark-color;
@@ -281,7 +280,6 @@ header {
         line-height: 28px;
         @media(max-width: 828px) {
           font-size: 16px;
-          margin-left: 33px;
         }
         &:after {
           content: '';

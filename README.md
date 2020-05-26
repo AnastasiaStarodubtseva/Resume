@@ -7,4 +7,4 @@ Technologies which have been used for the website:
 - Gulp
 - SCSS
 
-[View live demo](https://resume.anastasiastarodubtseva.com)
+[View live demo](https://anastasiastarodubtseva.com)

@@ -15,6 +15,9 @@ $dark-color: #222;
 body {
   font-family: 'Prata', serif;
   line-height: 38px;
+  @media(max-width: 828px) {
+    display: block;
+  }
 }
 .row {
   height: auto;

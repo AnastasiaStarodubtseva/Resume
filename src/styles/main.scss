@@ -12,6 +12,12 @@ $light-color: #fff;
 $grey-color: #f9f9f9;
 $dark-color: #222;
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
   font-family: 'Prata', serif;
   line-height: 38px;
@@ -39,8 +45,6 @@ header {
   }
 }
 .intro {
-  width: 100%;
-  height: 250px;
   text-align: center;
   padding-top: 150px;
   padding-bottom: 50px;
@@ -56,10 +60,6 @@ header {
     padding-top: 50px;
     letter-spacing: 1.5px;
   }
-  @media(max-width: 828px) {
-    height: 270px;
-
-  }
 }
 .banner {
   background: url(../img/img/background.jpg);
@@ -71,18 +71,22 @@ header {
   }
 }
 .summary {
-  width: 100%;
   height: 340px;
   padding: 140px 0 0 150px;
   flex-basis: 50%;
   @media(max-width: 900px) {
     font-size: 23px;
-    padding: 140px 0 0 42px;
+    padding: 100px 10px 0 10px;
+    margin-bottom: 12px;
+  }
+  @media(max-width: 400px) {
+    margin-bottom: 12px;
   }
   h2 {
     font-size: 30px;
     @media(max-width: 828px) {
       font-size: 23px;
+      margin-bottom: 20px;
     }
   }
   .internals {
@@ -102,16 +106,16 @@ header {
   }
 }
 .experience {
-  height: auto;
   background-color: $grey-color;
   padding: 140px 0 0 150px;
   @media(max-width: 900px) {
-    padding: 140px 0 0 42px;
+    padding: 100px 10px 0 10px;
   }
   h2 {
     font-size: 30px;
     @media(max-width: 828px) {
       font-size: 23px;
+      margin-bottom: 20px;
     }
   }
   .marviq {
@@ -128,6 +132,7 @@ header {
       margin-top: 9px;
       @media(max-width: 828px) {
         font-size: 16px;
+        line-height: 27px;
       }
     }
     h4 {
@@ -179,34 +184,26 @@ header {
   }
 }
 .languages {
-  width: 100%;
-  height: 340px;
   padding: 140px 0 0 150px;
   @media(max-width: 828px) {
-    padding: 140px 0 0 23px;
+    padding: 110px 10px 0 10px;
   }
   h2 {
     font-size: 30px;
     @media(max-width: 828px) {
       font-size: 23px;
-      padding-left: 20px;
+      margin-bottom: 20px;
     }
   }
   h5 {
     font-size: 16px;
     font-weight: 200;
     line-height: 40.9px;
-    @media(max-width: 828px) {
-
-    }
   }
   h6 {
     font-size: 16px;
     font-weight: 200;
     line-height: 40.9px;
-    @media(max-width: 828px) {
-
-    }
   }
 }
 .references {
@@ -215,18 +212,14 @@ header {
   padding: 140px 0 0 150px;
   background-color: #f9f9f9;
   @media(max-width: 900px) {
-    padding: 140px 0 0 42px;
+    padding: 100px 10px 0 10px;
   }
   h3 {
-    @media(max-width: 828px) {
+    @media(max-width: 900px) {
       font-size: 23px;
-      padding-left: 20px;
     }
   }
   .links {
-    @media(max-width: 828px) {
-      margin-left: 48px;
-    }
     a {
       color: $dark-color;
       line-height: 40.9px;
@@ -249,7 +242,7 @@ header {
         transform: scaleX(1);
       }
     }
-    h3{
+    h2 {
       font-size: 17px;
       color: #222;
       text-decoration: none;
@@ -270,8 +263,9 @@ header {
       display: inline-block;
       color: $dark-color;
     }
-    h3 {
+    h2 {
       font-size: 30px;
+      font-family: 'Prata', serif;
       a {
         font-size: 17px;
         color: $dark-color;
